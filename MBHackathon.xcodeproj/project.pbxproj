@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93005B13195376BF008971D4 /* MMActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93005B11195376BF008971D4 /* MMActivityViewController.m */; };
+		93005B14195376BF008971D4 /* MMActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93005B12195376BF008971D4 /* MMActivityViewController.xib */; };
 		934984E71951D7F800D6031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E61951D7F800D6031A /* Foundation.framework */; };
 		934984E91951D7F800D6031A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E81951D7F800D6031A /* CoreGraphics.framework */; };
 		934984EB1951D7F800D6031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984EA1951D7F800D6031A /* UIKit.framework */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93005B10195376BF008971D4 /* MMActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMActivityViewController.h; sourceTree = "<group>"; };
+		93005B11195376BF008971D4 /* MMActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMActivityViewController.m; sourceTree = "<group>"; };
+		93005B12195376BF008971D4 /* MMActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMActivityViewController.xib; sourceTree = "<group>"; };
 		934984E31951D7F800D6031A /* MBHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934984E61951D7F800D6031A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		934984E81951D7F800D6031A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +124,9 @@
 				934984FC1951D7F800D6031A /* MMViewController.m */,
 				934984FE1951D7F800D6031A /* Images.xcassets */,
 				934984ED1951D7F800D6031A /* Supporting Files */,
+				93005B10195376BF008971D4 /* MMActivityViewController.h */,
+				93005B11195376BF008971D4 /* MMActivityViewController.m */,
+				93005B12195376BF008971D4 /* MMActivityViewController.xib */,
 			);
 			path = MBHackathon;
 			sourceTree = "<group>";
@@ -232,6 +240,7 @@
 				934984FF1951D7F800D6031A /* Images.xcassets in Resources */,
 				934984F11951D7F800D6031A /* InfoPlist.strings in Resources */,
 				934984FA1951D7F800D6031A /* Main.storyboard in Resources */,
+				93005B14195376BF008971D4 /* MMActivityViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +262,7 @@
 				934984F71951D7F800D6031A /* MMAppDelegate.m in Sources */,
 				934984FD1951D7F800D6031A /* MMViewController.m in Sources */,
 				934984F31951D7F800D6031A /* main.m in Sources */,
+				93005B13195376BF008971D4 /* MMActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +467,7 @@
 				934985171951D7F800D6031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		934985181951D7F800D6031A /* Build configuration list for PBXNativeTarget "MBHackathonTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +476,7 @@
 				9349851A1951D7F800D6031A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

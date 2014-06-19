@@ -7,7 +7,9 @@
 //
 
 #import "MMViewController.h"
+#import "MMActivityViewController.h"
 
+BOOL alreadyDisplayedLoadinPage;
 NSString *jssURL = @"https://www";
 NSString *crashplanURL = @"https://";
 NSString *jssUserName = @"username";
@@ -29,14 +31,21 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self displayLoadingPage];
-	if (![self isURLsValid]) {
-        [self urlsNotValid];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    if (!alreadyDisplayedLoadinPage) {
+        [self displayLoadingPage];
     }
-    else
-    {
+	if ([self isURLsValid]) {
         NSDictionary *allVariables = [self setupVariables];
         [self checkAndDisplayComplianceStatus:allVariables];
+    }
+    else
+        [self urlsNotValid];
+    {
     }
     [self dismissLoadingPage];
 }
@@ -68,17 +77,20 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 - (void)displayLoadingPage
 {
-    // TODO: Display a loading activity monitor while we load all these variables
+    alreadyDisplayedLoadinPage = YES;
+    MMActivityViewController *activityView = [[MMActivityViewController alloc] init];
+    [self presentViewController:activityView animated:NO completion:nil];
 }
 
 - (void)dismissLoadingPage
 {
-    // TODO: Dismiss the loading page while we load all these variables
+    if ([self presentedViewController]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 - (BOOL)isURLsValid
 {
-    // TODO: Check the URL's and test to ensure we're set up correctly.
     return true;
 }
 
