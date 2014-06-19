@@ -11,6 +11,8 @@
 		93005B14195376BF008971D4 /* MMActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93005B12195376BF008971D4 /* MMActivityViewController.xib */; };
 		93005B1819538501008971D4 /* James.png in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1719538501008971D4 /* James.png */; };
 		93005B1C19538589008971D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1B19538589008971D4 /* Images.xcassets */; };
+		93005B1F195388BE008971D4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1D195388BE008971D4 /* icon.png */; };
+		93005B20195388BE008971D4 /* icon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1E195388BE008971D4 /* icon2x.png */; };
 		934984E71951D7F800D6031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E61951D7F800D6031A /* Foundation.framework */; };
 		934984E91951D7F800D6031A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E81951D7F800D6031A /* CoreGraphics.framework */; };
 		934984EB1951D7F800D6031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984EA1951D7F800D6031A /* UIKit.framework */; };
@@ -42,6 +44,8 @@
 		93005B12195376BF008971D4 /* MMActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMActivityViewController.xib; sourceTree = "<group>"; };
 		93005B1719538501008971D4 /* James.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = James.png; sourceTree = "<group>"; };
 		93005B1B19538589008971D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93005B1D195388BE008971D4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		93005B1E195388BE008971D4 /* icon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2x.png; sourceTree = "<group>"; };
 		934984E31951D7F800D6031A /* MBHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934984E61951D7F800D6031A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		934984E81951D7F800D6031A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +140,8 @@
 		934984ED1951D7F800D6031A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93005B1D195388BE008971D4 /* icon.png */,
+				93005B1E195388BE008971D4 /* icon2x.png */,
 				93005B1719538501008971D4 /* James.png */,
 				934984EE1951D7F800D6031A /* MBHackathon-Info.plist */,
 				934984EF1951D7F800D6031A /* InfoPlist.strings */,
@@ -240,8 +246,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93005B20195388BE008971D4 /* icon2x.png in Resources */,
 				93005B1819538501008971D4 /* James.png in Resources */,
 				93005B1C19538589008971D4 /* Images.xcassets in Resources */,
+				93005B1F195388BE008971D4 /* icon.png in Resources */,
 				934984F11951D7F800D6031A /* InfoPlist.strings in Resources */,
 				934984FA1951D7F800D6031A /* Main.storyboard in Resources */,
 				93005B14195376BF008971D4 /* MMActivityViewController.xib in Resources */,
