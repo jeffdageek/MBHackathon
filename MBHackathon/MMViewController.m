@@ -36,7 +36,7 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
     else
     {
         NSDictionary *allVariables = [self setupVariables];
-        [self checkComplianceStatus:allVariables];
+        [self checkAndDisplayComplianceStatus:allVariables];
     }
     [self dismissLoadingPage];
 }
@@ -112,7 +112,7 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
     return allComputers;
 }
 
-- (void)checkComplianceStatus:(NSDictionary *)varibles
+- (void)checkAndDisplayComplianceStatus:(NSDictionary *)varibles
 {
     
 }
