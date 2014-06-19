@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		93005B13195376BF008971D4 /* MMActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93005B11195376BF008971D4 /* MMActivityViewController.m */; };
 		93005B14195376BF008971D4 /* MMActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93005B12195376BF008971D4 /* MMActivityViewController.xib */; };
+		93005B1819538501008971D4 /* James.png in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1719538501008971D4 /* James.png */; };
+		93005B1C19538589008971D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1B19538589008971D4 /* Images.xcassets */; };
 		934984E71951D7F800D6031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E61951D7F800D6031A /* Foundation.framework */; };
 		934984E91951D7F800D6031A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E81951D7F800D6031A /* CoreGraphics.framework */; };
 		934984EB1951D7F800D6031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984EA1951D7F800D6031A /* UIKit.framework */; };
@@ -17,7 +19,6 @@
 		934984F71951D7F800D6031A /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 934984F61951D7F800D6031A /* MMAppDelegate.m */; };
 		934984FA1951D7F800D6031A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934984F81951D7F800D6031A /* Main.storyboard */; };
 		934984FD1951D7F800D6031A /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934984FC1951D7F800D6031A /* MMViewController.m */; };
-		934984FF1951D7F800D6031A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 934984FE1951D7F800D6031A /* Images.xcassets */; };
 		934985061951D7F800D6031A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934985051951D7F800D6031A /* XCTest.framework */; };
 		934985071951D7F800D6031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E61951D7F800D6031A /* Foundation.framework */; };
 		934985081951D7F800D6031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984EA1951D7F800D6031A /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 		93005B10195376BF008971D4 /* MMActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMActivityViewController.h; sourceTree = "<group>"; };
 		93005B11195376BF008971D4 /* MMActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMActivityViewController.m; sourceTree = "<group>"; };
 		93005B12195376BF008971D4 /* MMActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMActivityViewController.xib; sourceTree = "<group>"; };
+		93005B1719538501008971D4 /* James.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = James.png; sourceTree = "<group>"; };
+		93005B1B19538589008971D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		934984E31951D7F800D6031A /* MBHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934984E61951D7F800D6031A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		934984E81951D7F800D6031A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,7 +55,6 @@
 		934984F91951D7F800D6031A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		934984FB1951D7F800D6031A /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		934984FC1951D7F800D6031A /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
-		934984FE1951D7F800D6031A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		934985041951D7F800D6031A /* MBHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		934985051951D7F800D6031A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9349850D1951D7F800D6031A /* MBHackathonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBHackathonTests-Info.plist"; sourceTree = "<group>"; };
@@ -122,7 +124,7 @@
 				934984F81951D7F800D6031A /* Main.storyboard */,
 				934984FB1951D7F800D6031A /* MMViewController.h */,
 				934984FC1951D7F800D6031A /* MMViewController.m */,
-				934984FE1951D7F800D6031A /* Images.xcassets */,
+				93005B1B19538589008971D4 /* Images.xcassets */,
 				934984ED1951D7F800D6031A /* Supporting Files */,
 				93005B10195376BF008971D4 /* MMActivityViewController.h */,
 				93005B11195376BF008971D4 /* MMActivityViewController.m */,
@@ -134,6 +136,7 @@
 		934984ED1951D7F800D6031A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93005B1719538501008971D4 /* James.png */,
 				934984EE1951D7F800D6031A /* MBHackathon-Info.plist */,
 				934984EF1951D7F800D6031A /* InfoPlist.strings */,
 				934984F21951D7F800D6031A /* main.m */,
@@ -237,7 +240,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934984FF1951D7F800D6031A /* Images.xcassets in Resources */,
+				93005B1819538501008971D4 /* James.png in Resources */,
+				93005B1C19538589008971D4 /* Images.xcassets in Resources */,
 				934984F11951D7F800D6031A /* InfoPlist.strings in Resources */,
 				934984FA1951D7F800D6031A /* Main.storyboard in Resources */,
 				93005B14195376BF008971D4 /* MMActivityViewController.xib in Resources */,

@@ -9,7 +9,13 @@
 #import "MMViewController.h"
 #import "MMActivityViewController.h"
 
+// To prevent constant loading of the loading page, define
+// a variable to determine if it's been presented already.
 BOOL alreadyDisplayedLoadinPage;
+
+// TODO: Fill in with all information and/or move to seperate
+// Declarations file.
+
 NSString *jssURL = @"https://www";
 NSString *crashplanURL = @"https://";
 NSString *jssUserName = @"username";
