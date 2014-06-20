@@ -8,16 +8,17 @@
 
 #import "MMViewController.h"
 #import "MMActivityViewController.h"
+#import "MMUrlErrorViewController.h"
 
 // To prevent constant loading of the loading page, define
 // a variable to determine if it's been presented already.
-BOOL alreadyDisplayedLoadinPage;
+BOOL alreadyDisplayedLoadingPage;
 
 // TODO: Fill in with all information and/or move to seperate
 // Declarations file.
 
-NSString *jssURL = @"https://www";
-NSString *crashplanURL = @"https://";
+NSString *jssURL = @"http://";
+NSString *crashplanURL = @"https://crashplan.com";
 NSString *jssUserName = @"username";
 NSString *jssPassword = @"password";
 
@@ -42,18 +43,20 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    if (!alreadyDisplayedLoadinPage) {
+    // On first load, display loading page while we check urls and parse XMLs.
+    if (!alreadyDisplayedLoadingPage) {
         [self displayLoadingPage];
+        NSArray *urls = [NSArray arrayWithObjects:jssURL, crashplanURL,nil];
+        if ([self isURLsValid:urls]) {
+            NSDictionary *allVariables = [self setupVariables];
+            [self checkAndDisplayComplianceStatus:allVariables];
+            [self dismissLoadingPage];
+        }
+        else
+            // If urls are not valid, entire app cannot proceed.  Display error
+            // and hold.  Future improvements would allow user to correct URL.
+            [self urlsNotValid];
     }
-	if ([self isURLsValid]) {
-        NSDictionary *allVariables = [self setupVariables];
-        [self checkAndDisplayComplianceStatus:allVariables];
-    }
-    else
-        [self urlsNotValid];
-    {
-    }
-    [self dismissLoadingPage];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,7 +86,7 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 - (void)displayLoadingPage
 {
-    alreadyDisplayedLoadinPage = YES;
+    alreadyDisplayedLoadingPage = YES;
     MMActivityViewController *activityView = [[MMActivityViewController alloc] init];
     [self presentViewController:activityView animated:NO completion:nil];
 }
@@ -95,14 +98,36 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
     }
 }
 
-- (BOOL)isURLsValid
+- (BOOL)isURLsValid:(NSArray *)urls
 {
+    // Ensre we're working with an array of strings.
+    // Returns true if all urls are valid, returns false if any is invalid.
+    for (NSString *urlPath in urls) {
+        if (![urlPath isKindOfClass:[NSString class]]) {
+            NSLog(@"Not a valid string passed into URL check.");
+            return false;
+        }
+        
+        // Go through each URL to test to see if we can even connect to it.
+        NSURL *urlToTest = [NSURL URLWithString:urlPath];
+        NSURLRequest *siteRequest = [NSURLRequest requestWithURL:urlToTest];
+        NSError *error = nil;
+        NSURLResponse *response = nil;
+        [NSURLConnection sendSynchronousRequest:siteRequest returningResponse:&response error:&error];
+        if (error) {
+            return false;
+        }
+    }
     return true;
 }
 
 - (void)urlsNotValid
 {
-    // TODO: Exit out or prompt for new URL's
+    // Stop all processing and display error.
+    // TODO: Gracefully allow users to correct URL in app and re-process
+    MMUrlErrorViewController *errorView = [[MMUrlErrorViewController alloc] init];
+    [self dismissViewControllerAnimated:NO completion:nil];
+    [self presentViewController:errorView animated:YES completion:nil];
     NSLog(@"URLs are not valid.  Need to handle.  URL's are \njss: %@\ncrashplan: %@", jssURL, crashplanURL);
 }
 

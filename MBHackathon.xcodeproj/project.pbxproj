@@ -13,6 +13,8 @@
 		93005B1C19538589008971D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1B19538589008971D4 /* Images.xcassets */; };
 		93005B1F195388BE008971D4 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1D195388BE008971D4 /* icon.png */; };
 		93005B20195388BE008971D4 /* icon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 93005B1E195388BE008971D4 /* icon2x.png */; };
+		93244A6F1954A2A900969F43 /* MMUrlErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 93244A6D1954A2A900969F43 /* MMUrlErrorViewController.m */; };
+		93244A701954A2A900969F43 /* MMUrlErrorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 93244A6E1954A2A900969F43 /* MMUrlErrorViewController.xib */; };
 		934984E71951D7F800D6031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E61951D7F800D6031A /* Foundation.framework */; };
 		934984E91951D7F800D6031A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E81951D7F800D6031A /* CoreGraphics.framework */; };
 		934984EB1951D7F800D6031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984EA1951D7F800D6031A /* UIKit.framework */; };
@@ -46,6 +48,9 @@
 		93005B1B19538589008971D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		93005B1D195388BE008971D4 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		93005B1E195388BE008971D4 /* icon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2x.png; sourceTree = "<group>"; };
+		93244A6C1954A2A800969F43 /* MMUrlErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUrlErrorViewController.h; sourceTree = "<group>"; };
+		93244A6D1954A2A900969F43 /* MMUrlErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUrlErrorViewController.m; sourceTree = "<group>"; };
+		93244A6E1954A2A900969F43 /* MMUrlErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMUrlErrorViewController.xib; sourceTree = "<group>"; };
 		934984E31951D7F800D6031A /* MBHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		934984E61951D7F800D6031A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		934984E81951D7F800D6031A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -133,6 +138,9 @@
 				93005B10195376BF008971D4 /* MMActivityViewController.h */,
 				93005B11195376BF008971D4 /* MMActivityViewController.m */,
 				93005B12195376BF008971D4 /* MMActivityViewController.xib */,
+				93244A6C1954A2A800969F43 /* MMUrlErrorViewController.h */,
+				93244A6D1954A2A900969F43 /* MMUrlErrorViewController.m */,
+				93244A6E1954A2A900969F43 /* MMUrlErrorViewController.xib */,
 			);
 			path = MBHackathon;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 				93005B20195388BE008971D4 /* icon2x.png in Resources */,
 				93005B1819538501008971D4 /* James.png in Resources */,
 				93005B1C19538589008971D4 /* Images.xcassets in Resources */,
+				93244A701954A2A900969F43 /* MMUrlErrorViewController.xib in Resources */,
 				93005B1F195388BE008971D4 /* icon.png in Resources */,
 				934984F11951D7F800D6031A /* InfoPlist.strings in Resources */,
 				934984FA1951D7F800D6031A /* Main.storyboard in Resources */,
@@ -271,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93244A6F1954A2A900969F43 /* MMUrlErrorViewController.m in Sources */,
 				934984F71951D7F800D6031A /* MMAppDelegate.m in Sources */,
 				934984FD1951D7F800D6031A /* MMViewController.m in Sources */,
 				934984F31951D7F800D6031A /* main.m in Sources */,
