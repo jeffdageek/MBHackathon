@@ -7,17 +7,16 @@
 //
 
 #import "MMViewController.h"
-#import "MMActivityViewController.h"
 #import "MMUrlErrorViewController.h"
+#import "MMUsernamePromptViewController.h"
 
 // To prevent constant loading of the loading page, define
 // a variable to determine if it's been presented already.
-BOOL alreadyDisplayedLoadingPage;
 
 // TODO: Fill in with all information and/or move to seperate
 // Declarations file.
 
-NSString *jssURL = @"http://www.apple.com";
+NSString *jssURL = @"http://apple.com";
 NSString *crashplanURL = @"https://crashplan.com";
 NSString *jssUserName = @"username";
 NSString *jssPassword = @"password";
@@ -35,6 +34,8 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 @implementation MMViewController
 
+@synthesize jssUser, crashPlanUser;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,9 +44,12 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    // On first load, display loading page while we check urls and parse XMLs.
-    if (!alreadyDisplayedLoadingPage) {
-        [self displayLoadingPage];
+    
+    if (jssUser == nil && crashPlanUser == nil) {
+        MMUsernamePromptViewController *usernamePrompt = [[MMUsernamePromptViewController alloc] init];
+        [self presentViewController:usernamePrompt animated:YES completion:nil];
+    }
+    else {
         NSArray *urls = [NSArray arrayWithObjects:jssURL, crashplanURL,nil];
         if ([self isURLsValid:urls]) {
             NSDictionary *allVariables = [self setupVariables];
@@ -82,13 +86,6 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
     [variables setObject:[self getComputerCrashPlanIDsforUser:crashPlanEndUserName] forKey:allCrashPlanComptuersKey];
     
     return variables;
-}
-
-- (void)displayLoadingPage
-{
-    alreadyDisplayedLoadingPage = YES;
-    MMActivityViewController *activityView = [[MMActivityViewController alloc] init];
-    [self presentViewController:activityView animated:NO completion:nil];
 }
 
 - (void)dismissLoadingPage
@@ -157,7 +154,11 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 - (void)checkAndDisplayComplianceStatus:(NSDictionary *)varibles
 {
-    
+}
+
+- (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username{
+    [self setJssUser:jamfUserName];
+    [self setCrashPlanUser:code42Username];
 }
 
 @end

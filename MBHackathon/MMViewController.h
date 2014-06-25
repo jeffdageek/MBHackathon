@@ -9,6 +9,15 @@
 #import <UIKit/UIKit.h>
 
 @interface MMViewController : UIViewController
+{
+    NSString *jssUser;
+    NSString *crashPlanUser;
+}
+
+- (void)setJSSUsername:(NSString *)jssUser andCrashPlanUsername:(NSString *)crashplanUser;
+
+@property (readwrite, nonatomic) NSString *jssUser;
+@property (readwrite, nonatomic) NSString *crashPlanUser;
 
 
 @end
