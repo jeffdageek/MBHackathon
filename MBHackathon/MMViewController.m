@@ -17,7 +17,7 @@ BOOL alreadyDisplayedLoadingPage;
 // TODO: Fill in with all information and/or move to seperate
 // Declarations file.
 
-NSString *jssURL = @"http://";
+NSString *jssURL = @"http://www.apple.com";
 NSString *crashplanURL = @"https://crashplan.com";
 NSString *jssUserName = @"username";
 NSString *jssPassword = @"password";
