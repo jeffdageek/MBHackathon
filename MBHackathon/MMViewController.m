@@ -16,12 +16,19 @@
 // TODO: Fill in with all information and/or move to seperate
 // Declarations file.
 
+// Note:  Change this to the actual info for your own JSS and CrashPlan server.
+// This is the infor we'll be using to connect to the web service.
+// If you're having issues with the webservice, ensure this is all correct.
+
 NSString *jssURL = @"http://apple.com";
 NSString *crashplanURL = @"https://crashplan.com";
 NSString *jssUserName = @"username";
 NSString *jssPassword = @"password";
+NSString *jssPass = @"abc123";
+NSString *crashPlanPass = @"abc123";
 
 
+// Note:  Do not change these...  These are used for the underlying code of the app
 NSString *jSSEndUsernameKey = @"JSSEndUsername";
 NSString *crashPlanEndUserNameKey = @"CrashPlanEndUserName";
 NSString *allJSSComptuersKey = @"allJSSComputers";
@@ -34,7 +41,7 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 @implementation MMViewController
 
-@synthesize jssUser, crashPlanUser;
+@synthesize jssUser, crashPlanUser, crashPlanPass;
 
 - (void)viewDidLoad
 {
@@ -156,9 +163,10 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 {
 }
 
-- (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username{
+- (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username andCrashPlanPassword:(NSString *)crashplanPass{
     [self setJssUser:jamfUserName];
     [self setCrashPlanUser:code42Username];
+    [self setCrashPlanPass:crashPlanPass];
 }
 
 @end

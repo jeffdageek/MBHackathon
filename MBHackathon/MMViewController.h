@@ -12,12 +12,14 @@
 {
     NSString *jssUser;
     NSString *crashPlanUser;
+    NSString *crashPlanPass;
 }
 
-- (void)setJSSUsername:(NSString *)jssUser andCrashPlanUsername:(NSString *)crashplanUser;
+- (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username andCrashPlanPassword:(NSString *)crashplanPass;
 
 @property (readwrite, nonatomic) NSString *jssUser;
 @property (readwrite, nonatomic) NSString *crashPlanUser;
+@property (readwrite, nonatomic) NSString *crashPlanPass;
 
 
 @end

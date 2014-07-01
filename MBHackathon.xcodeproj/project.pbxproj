@@ -21,7 +21,6 @@
 		934984F71951D7F800D6031A /* MMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 934984F61951D7F800D6031A /* MMAppDelegate.m */; };
 		934984FA1951D7F800D6031A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 934984F81951D7F800D6031A /* Main.storyboard */; };
 		934984FD1951D7F800D6031A /* MMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 934984FC1951D7F800D6031A /* MMViewController.m */; };
-		934985061951D7F800D6031A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934985051951D7F800D6031A /* XCTest.framework */; };
 		934985071951D7F800D6031A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984E61951D7F800D6031A /* Foundation.framework */; };
 		934985081951D7F800D6031A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 934984EA1951D7F800D6031A /* UIKit.framework */; };
 		934985101951D7F800D6031A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9349850E1951D7F800D6031A /* InfoPlist.strings */; };
@@ -29,6 +28,7 @@
 		936FA2D6195A70C700400164 /* MMUsernamePromptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936FA2D4195A70C700400164 /* MMUsernamePromptViewController.m */; };
 		936FA2D7195A70C700400164 /* MMUsernamePromptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936FA2D5195A70C700400164 /* MMUsernamePromptViewController.xib */; };
 		936FA2D9195A7CA400400164 /* iphone_app_macbrained_july2014.png in Resources */ = {isa = PBXBuildFile; fileRef = 936FA2D8195A7CA400400164 /* iphone_app_macbrained_july2014.png */; };
+		93EBEA201962311F0016EFB2 /* MMWebServiceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EBEA1F1962311F0016EFB2 /* MMWebServiceParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,6 @@
 		934984FB1951D7F800D6031A /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		934984FC1951D7F800D6031A /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
 		934985041951D7F800D6031A /* MBHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		934985051951D7F800D6031A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9349850D1951D7F800D6031A /* MBHackathonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBHackathonTests-Info.plist"; sourceTree = "<group>"; };
 		9349850F1951D7F800D6031A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		934985111951D7F800D6031A /* MBHackathonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBHackathonTests.m; sourceTree = "<group>"; };
@@ -71,6 +70,8 @@
 		936FA2D4195A70C700400164 /* MMUsernamePromptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUsernamePromptViewController.m; sourceTree = "<group>"; };
 		936FA2D5195A70C700400164 /* MMUsernamePromptViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMUsernamePromptViewController.xib; sourceTree = "<group>"; };
 		936FA2D8195A7CA400400164 /* iphone_app_macbrained_july2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_app_macbrained_july2014.png; sourceTree = "<group>"; };
+		93EBEA1E1962311F0016EFB2 /* MMWebServiceParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMWebServiceParser.h; path = ../MMWebServiceParser.h; sourceTree = "<group>"; };
+		93EBEA1F1962311F0016EFB2 /* MMWebServiceParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMWebServiceParser.m; path = ../MMWebServiceParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				934985061951D7F800D6031A /* XCTest.framework in Frameworks */,
 				934985081951D7F800D6031A /* UIKit.framework in Frameworks */,
 				934985071951D7F800D6031A /* Foundation.framework in Frameworks */,
 			);
@@ -122,7 +122,6 @@
 				934984E61951D7F800D6031A /* Foundation.framework */,
 				934984E81951D7F800D6031A /* CoreGraphics.framework */,
 				934984EA1951D7F800D6031A /* UIKit.framework */,
-				934985051951D7F800D6031A /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -143,6 +142,8 @@
 				936FA2D3195A70C700400164 /* MMUsernamePromptViewController.h */,
 				936FA2D4195A70C700400164 /* MMUsernamePromptViewController.m */,
 				936FA2D5195A70C700400164 /* MMUsernamePromptViewController.xib */,
+				93EBEA1E1962311F0016EFB2 /* MMWebServiceParser.h */,
+				93EBEA1F1962311F0016EFB2 /* MMWebServiceParser.m */,
 				934984ED1951D7F800D6031A /* Supporting Files */,
 			);
 			path = MBHackathon;
@@ -289,6 +290,7 @@
 				936FA2D6195A70C700400164 /* MMUsernamePromptViewController.m in Sources */,
 				934984FD1951D7F800D6031A /* MMViewController.m in Sources */,
 				934984F31951D7F800D6031A /* main.m in Sources */,
+				93EBEA201962311F0016EFB2 /* MMWebServiceParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

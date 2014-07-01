@@ -15,4 +15,6 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *crashPlanUsernameBox;
 
+@property (weak, nonatomic) IBOutlet UITextField *crashPlanPassBox;
+
 @end

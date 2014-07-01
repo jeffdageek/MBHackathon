@@ -39,9 +39,10 @@
 - (IBAction)sendUsername:(id)sender {
     NSString *jssUsername = [[self jamfUsernameBox] text];
     NSString *crashPlanUsername = [[self crashPlanUsernameBox] text];
+    NSString *crashPlanPassword = [[self crashPlanPassBox] text];
     // TODO: Make an actual protocol for this... as this is really sloppy.  Stupid agressive deadlines :(
     if ([[self presentingViewController] isKindOfClass:[MMViewController class]]) {
-        [(MMViewController *)[self presentingViewController]setJSSUsername:jssUsername andCrashPlanUsername:crashPlanUsername];
+        [(MMViewController *)[self presentingViewController]setJSSUsername:jssUsername andCrashPlanUsername:crashPlanUsername andCrashPlanPassword:crashPlanPassword];
     }
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
 }
