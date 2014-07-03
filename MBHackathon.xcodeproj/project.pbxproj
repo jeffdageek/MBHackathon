@@ -29,6 +29,11 @@
 		936FA2D7195A70C700400164 /* MMUsernamePromptViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 936FA2D5195A70C700400164 /* MMUsernamePromptViewController.xib */; };
 		936FA2D9195A7CA400400164 /* iphone_app_macbrained_july2014.png in Resources */ = {isa = PBXBuildFile; fileRef = 936FA2D8195A7CA400400164 /* iphone_app_macbrained_july2014.png */; };
 		93EBEA201962311F0016EFB2 /* MMWebServiceParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 93EBEA1F1962311F0016EFB2 /* MMWebServiceParser.m */; };
+		93F344A71964FE2900585836 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F344A31964FE2900585836 /* 4.png */; };
+		93F344A81964FE2900585836 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F344A41964FE2900585836 /* 1.png */; };
+		93F344A91964FE2900585836 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F344A51964FE2900585836 /* 2.png */; };
+		93F344AA1964FE2900585836 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F344A61964FE2900585836 /* 3.png */; };
+		93F344AC1965012400585836 /* more.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F344AB1965012400585836 /* more.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +77,11 @@
 		936FA2D8195A7CA400400164 /* iphone_app_macbrained_july2014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphone_app_macbrained_july2014.png; sourceTree = "<group>"; };
 		93EBEA1E1962311F0016EFB2 /* MMWebServiceParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MMWebServiceParser.h; path = ../MMWebServiceParser.h; sourceTree = "<group>"; };
 		93EBEA1F1962311F0016EFB2 /* MMWebServiceParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MMWebServiceParser.m; path = ../MMWebServiceParser.m; sourceTree = "<group>"; };
+		93F344A31964FE2900585836 /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4.png; sourceTree = "<group>"; };
+		93F344A41964FE2900585836 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		93F344A51964FE2900585836 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		93F344A61964FE2900585836 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		93F344AB1965012400585836 /* more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = more.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +162,11 @@
 		934984ED1951D7F800D6031A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				93F344AB1965012400585836 /* more.png */,
+				93F344A31964FE2900585836 /* 4.png */,
+				93F344A41964FE2900585836 /* 1.png */,
+				93F344A51964FE2900585836 /* 2.png */,
+				93F344A61964FE2900585836 /* 3.png */,
 				93005B1D195388BE008971D4 /* icon.png */,
 				93005B1E195388BE008971D4 /* icon2x.png */,
 				93005B1719538501008971D4 /* James.png */,
@@ -258,14 +273,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93F344A81964FE2900585836 /* 1.png in Resources */,
 				93005B20195388BE008971D4 /* icon2x.png in Resources */,
 				936FA2D7195A70C700400164 /* MMUsernamePromptViewController.xib in Resources */,
 				93005B1819538501008971D4 /* James.png in Resources */,
 				93005B1C19538589008971D4 /* Images.xcassets in Resources */,
 				93244A701954A2A900969F43 /* MMUrlErrorViewController.xib in Resources */,
+				93F344A91964FE2900585836 /* 2.png in Resources */,
 				936FA2D9195A7CA400400164 /* iphone_app_macbrained_july2014.png in Resources */,
+				93F344AA1964FE2900585836 /* 3.png in Resources */,
 				93005B1F195388BE008971D4 /* icon.png in Resources */,
 				934984F11951D7F800D6031A /* InfoPlist.strings in Resources */,
+				93F344A71964FE2900585836 /* 4.png in Resources */,
+				93F344AC1965012400585836 /* more.png in Resources */,
 				934984FA1951D7F800D6031A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

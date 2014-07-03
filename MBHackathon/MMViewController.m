@@ -34,6 +34,11 @@ NSString *crashPlanEndUserNameKey = @"CrashPlanEndUserName";
 NSString *allJSSComptuersKey = @"allJSSComputers";
 NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
+// Debugging variables:
+int backupValue = 100;
+int encryptionValue = 100;
+int softwareValues = 100;
+
 @interface MMViewController ()
 
 @end
@@ -161,12 +166,34 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 - (void)checkAndDisplayComplianceStatus:(NSDictionary *)varibles
 {
+    int backupPercent = [[[self backupPercentage] text] intValue];
+    int encryptionPercent = [[[self encryptionPercentage] text] intValue];
+    int softWarePercent = [[[self softwareUpToDate] text] intValue];
+    if (backupPercent == 100 && encryptionPercent == 100  && softWarePercent == 100) {
+        [[self statusView] setImage:[UIImage imageNamed:@"1.png"]];
+    }
+    else if(backupPercent >= 75 && encryptionPercent >= 75  && softWarePercent >= 75){
+        [[self statusView] setImage:[UIImage imageNamed:@"2.png"]];
+    }
+    else if(backupPercent >= 50 && encryptionPercent >= 50  && softWarePercent >= 50) {
+        [[self statusView] setImage:[UIImage imageNamed:@"3.png"]];
+    }
+    else {
+        [[self statusView] setImage:[UIImage imageNamed:@"4.png"]];
+    }
 }
 
 - (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username andCrashPlanPassword:(NSString *)crashplanPass{
     [self setJssUser:jamfUserName];
     [self setCrashPlanUser:code42Username];
     [self setCrashPlanPass:crashPlanPass];
+}
+
+#pragma mark UITextFieldDelegate methods
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self checkAndDisplayComplianceStatus:nil];
 }
 
 @end
