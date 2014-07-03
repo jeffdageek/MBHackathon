@@ -7,26 +7,37 @@
 //
 
 #import "MMViewController.h"
-#import "MMActivityViewController.h"
 #import "MMUrlErrorViewController.h"
+#import "MMUsernamePromptViewController.h"
 
 // To prevent constant loading of the loading page, define
 // a variable to determine if it's been presented already.
-BOOL alreadyDisplayedLoadingPage;
 
 // TODO: Fill in with all information and/or move to seperate
 // Declarations file.
 
-NSString *jssURL = @"http://www.apple.com";
+// Note:  Change this to the actual info for your own JSS and CrashPlan server.
+// This is the infor we'll be using to connect to the web service.
+// If you're having issues with the webservice, ensure this is all correct.
+
+NSString *jssURL = @"http://apple.com";
 NSString *crashplanURL = @"https://crashplan.com";
 NSString *jssUserName = @"username";
 NSString *jssPassword = @"password";
+NSString *jssPass = @"abc123";
+NSString *crashPlanPass = @"abc123";
 
 
+// Note:  Do not change these...  These are used for the underlying code of the app
 NSString *jSSEndUsernameKey = @"JSSEndUsername";
 NSString *crashPlanEndUserNameKey = @"CrashPlanEndUserName";
 NSString *allJSSComptuersKey = @"allJSSComputers";
 NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
+
+// Debugging variables:
+int backupValue = 100;
+int encryptionValue = 100;
+int softwareValues = 100;
 
 @interface MMViewController ()
 
@@ -34,6 +45,8 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 
 @implementation MMViewController
+
+@synthesize jssUser, crashPlanUser, crashPlanPass;
 
 - (void)viewDidLoad
 {
@@ -43,9 +56,12 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    // On first load, display loading page while we check urls and parse XMLs.
-    if (!alreadyDisplayedLoadingPage) {
-        [self displayLoadingPage];
+    
+    if (jssUser == nil && crashPlanUser == nil) {
+        MMUsernamePromptViewController *usernamePrompt = [[MMUsernamePromptViewController alloc] init];
+        [self presentViewController:usernamePrompt animated:YES completion:nil];
+    }
+    else {
         NSArray *urls = [NSArray arrayWithObjects:jssURL, crashplanURL,nil];
         if ([self isURLsValid:urls]) {
             NSDictionary *allVariables = [self setupVariables];
@@ -82,13 +98,6 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
     [variables setObject:[self getComputerCrashPlanIDsforUser:crashPlanEndUserName] forKey:allCrashPlanComptuersKey];
     
     return variables;
-}
-
-- (void)displayLoadingPage
-{
-    alreadyDisplayedLoadingPage = YES;
-    MMActivityViewController *activityView = [[MMActivityViewController alloc] init];
-    [self presentViewController:activityView animated:NO completion:nil];
 }
 
 - (void)dismissLoadingPage
@@ -157,7 +166,34 @@ NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
 
 - (void)checkAndDisplayComplianceStatus:(NSDictionary *)varibles
 {
-    
+    int backupPercent = [[[self backupPercentage] text] intValue];
+    int encryptionPercent = [[[self encryptionPercentage] text] intValue];
+    int softWarePercent = [[[self softwareUpToDate] text] intValue];
+    if (backupPercent == 100 && encryptionPercent == 100  && softWarePercent == 100) {
+        [[self statusView] setImage:[UIImage imageNamed:@"1.png"]];
+    }
+    else if(backupPercent >= 75 && encryptionPercent >= 75  && softWarePercent >= 75){
+        [[self statusView] setImage:[UIImage imageNamed:@"2.png"]];
+    }
+    else if(backupPercent >= 50 && encryptionPercent >= 50  && softWarePercent >= 50) {
+        [[self statusView] setImage:[UIImage imageNamed:@"3.png"]];
+    }
+    else {
+        [[self statusView] setImage:[UIImage imageNamed:@"4.png"]];
+    }
+}
+
+- (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username andCrashPlanPassword:(NSString *)crashplanPass{
+    [self setJssUser:jamfUserName];
+    [self setCrashPlanUser:code42Username];
+    [self setCrashPlanPass:crashPlanPass];
+}
+
+#pragma mark UITextFieldDelegate methods
+
+- (void)textFieldDidEndEditing:(UITextField *)textField
+{
+    [self checkAndDisplayComplianceStatus:nil];
 }
 
 @end
