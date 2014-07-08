@@ -189,6 +189,16 @@ int softwareValues = 100;
     [self setCrashPlanPass:crashPlanPass];
 }
 
+- (IBAction)reportStolenButtonPressed:(id)sender {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Report Stolen"
+                                                    message:@"Click OK to notify IT and wipe all data"
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:@"Cancel", nil];
+    [alert show];
+}
+
+
 #pragma mark UITextFieldDelegate methods
 
 - (void)textFieldDidEndEditing:(UITextField *)textField

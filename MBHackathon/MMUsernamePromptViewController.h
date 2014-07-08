@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MMUsernamePromptViewController : UIViewController
+@interface MMUsernamePromptViewController : UIViewController <UITextFieldDelegate>
 
 
 @property (weak, nonatomic) IBOutlet UITextField *jamfUsernameBox;

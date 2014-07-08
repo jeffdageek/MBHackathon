@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,53 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KjZ-l0-la8">
-                                <rect key="frame" x="0.0" y="20" width="320" height="45"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nick Olmsted - Mac Laptop" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-iH-bsB">
-                                        <rect key="frame" x="20" y="8" width="280" height="30"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" red="0.90510778296870575" green="0.80544323217699165" blue="0.95841117527173914" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                            </view>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Backup %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-U5-OZH">
-                                <rect key="frame" x="41" y="73" width="80" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Backup %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-U5-OZH">
+                                <rect key="frame" x="20" y="111" width="80" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Encryption %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-mA-khD">
-                                <rect key="frame" x="41" y="111" width="100" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Encryption %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-mA-khD">
+                                <rect key="frame" x="20" y="149" width="100" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Software up to date %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-t4-6fP">
-                                <rect key="frame" x="41" y="149" width="158" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Software up to date %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-t4-6fP">
+                                <rect key="frame" x="20" y="187" width="158" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="more.png" translatesAutoresizingMaskIntoConstraints="NO" id="LGB-iB-jtB">
-                                <rect key="frame" x="270" y="73" width="30" height="29"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="more.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qyp-re-aEO">
-                                <rect key="frame" x="270" y="110" width="30" height="29"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="more.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qbn-Nv-36A">
-                                <rect key="frame" x="270" y="149" width="30" height="29"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCX-eH-Lkm">
-                                <rect key="frame" x="209" y="73" width="53" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6eX-0A-kEI"/>
-                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-bs-FdS">
-                                <rect key="frame" x="209" y="111" width="53" height="30"/>
+                                <rect key="frame" x="190" y="149" width="53" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -70,20 +41,133 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KC9-Db-a18">
-                                <rect key="frame" x="209" y="149" width="53" height="30"/>
+                                <rect key="frame" x="190" y="187" width="53" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="OE4-7d-zmu"/>
                                 </connections>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="V4p-5x-j3I">
-                                <rect key="frame" x="-10" y="245" width="340" height="323"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="V4p-5x-j3I">
+                                <rect key="frame" x="176" y="444" width="124" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="104" id="3am-Hm-SUC"/>
+                                    <constraint firstAttribute="width" constant="124" id="cUy-vm-lAw"/>
+                                </constraints>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="mackbrainedmockup_png" translatesAutoresizingMaskIntoConstraints="NO" id="4xu-Ft-IbE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="hGb-fB-yyG"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nick Olmsted" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-iH-bsB">
+                                <rect key="frame" x="20" y="28" width="280" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zKA-Dj-5Gx">
+                                <rect key="frame" x="23" y="73" width="275" height="29"/>
+                                <segments>
+                                    <segment title="Mac Pro"/>
+                                    <segment title="Macbook Air"/>
+                                    <segment title="iPad Air"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCX-eH-Lkm">
+                                <rect key="frame" x="190" y="109" width="53" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="6eX-0A-kEI"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95Z-Cn-uxW">
+                                <rect key="frame" x="242" y="109" width="17" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="lyt-ce-5iZ"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-FH-XHg">
+                                <rect key="frame" x="242" y="149" width="17" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="diC-Zb-pWF"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-rE-DGk">
+                                <rect key="frame" x="276" y="113" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxu-pb-XDB">
+                                <rect key="frame" x="276" y="153" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-YL-BAu">
+                                <rect key="frame" x="276" y="191" width="22" height="22"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT Health:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-EC-5wC">
+                                <rect key="frame" x="20" y="485" width="73.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="25%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLd-7y-WCb">
+                                <rect key="frame" x="110" y="485" width="37" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XB-kV-j4b">
+                                <rect key="frame" x="242" y="187" width="17" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="RpD-xl-CcD"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="om6-Lo-2wp">
+                                <rect key="frame" x="52" y="253" width="217" height="61"/>
+                                <color key="backgroundColor" red="1" green="0.032459025535791941" blue="0.23368041805605566" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="hwp-Xd-O60"/>
+                                    <constraint firstAttribute="width" constant="217" id="j2x-Gu-uBe"/>
+                                </constraints>
+                                <state key="normal" title="Report Stolen">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reportStolenButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IWZ-XR-KBs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="om6-Lo-2wp" secondAttribute="trailing" constant="51" id="2T9-Gn-dj7"/>
+                            <constraint firstItem="Ao6-mA-khD" firstAttribute="top" secondItem="VMI-U5-OZH" secondAttribute="bottom" constant="8" id="39z-un-r1F"/>
+                            <constraint firstItem="a9E-iH-bsB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="61d-Kx-Phf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V4p-5x-j3I" secondAttribute="bottom" constant="20" id="8ax-Vj-fYy"/>
+                            <constraint firstItem="tj5-t4-6fP" firstAttribute="top" secondItem="Ao6-mA-khD" secondAttribute="bottom" constant="8" id="H58-g2-1DQ"/>
+                            <constraint firstItem="om6-Lo-2wp" firstAttribute="leading" secondItem="tj5-t4-6fP" secondAttribute="trailing" constant="-126" id="Hja-2O-cxn"/>
+                            <constraint firstItem="VLd-7y-WCb" firstAttribute="centerY" secondItem="V4p-5x-j3I" secondAttribute="centerY" constant="-0.5" id="Ico-Ld-KEw"/>
+                            <constraint firstItem="dbV-EC-5wC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="NpG-8g-aUG"/>
+                            <constraint firstItem="zKA-Dj-5Gx" firstAttribute="top" secondItem="a9E-iH-bsB" secondAttribute="bottom" constant="15" id="W40-xP-BAy"/>
+                            <constraint firstAttribute="trailing" secondItem="V4p-5x-j3I" secondAttribute="trailing" constant="20" id="WbS-dF-41s"/>
+                            <constraint firstItem="VLd-7y-WCb" firstAttribute="width" secondItem="dbV-EC-5wC" secondAttribute="width" id="du9-DY-SFT"/>
+                            <constraint firstItem="V4p-5x-j3I" firstAttribute="centerY" secondItem="dbV-EC-5wC" secondAttribute="centerY" constant="0.5" id="fPf-do-Sym"/>
+                            <constraint firstItem="om6-Lo-2wp" firstAttribute="top" secondItem="tj5-t4-6fP" secondAttribute="bottom" constant="60" id="wFG-3P-LHL"/>
+                            <constraint firstItem="VMI-U5-OZH" firstAttribute="top" secondItem="zKA-Dj-5Gx" secondAttribute="bottom" constant="10" id="yjv-MM-DO5"/>
+                        </constraints>
                     </view>
-                    <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="backupPercentage" destination="FCX-eH-Lkm" id="phi-9z-hnD"/>
                         <outlet property="encryptionPercentage" destination="HBt-bs-FdS" id="8jk-Ev-XMk"/>
@@ -98,12 +182,15 @@
         </scene>
     </scenes>
     <resources>
-        <image name="1.png" width="980" height="914"/>
-        <image name="more.png" width="92" height="96"/>
+        <image name="1" width="396" height="456"/>
+        <image name="mackbrainedmockup_png" width="90" height="156"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination" type="retina4">
+            <size key="portraitSize" width="320" height="568"/>
+            <size key="landscapeSize" width="568" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

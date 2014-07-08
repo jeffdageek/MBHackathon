@@ -47,4 +47,12 @@
     [[self presentingViewController] dismissViewControllerAnimated:YES completion:nil];
 }
 
+// pragma mark UITextFieldDelegate methods
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
 @end
