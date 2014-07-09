@@ -2,8 +2,7 @@
 //  MMWebServiceParser.h
 //  MBHackathon
 //
-//  Created by Jeff Wilson on 30/06/2014.
-//  Copyright (c) 2014 Marauders. All rights reserved.
+//  Created by James Trousdale, Jeff Wilson and Nick Olmsted on 18/06/2014.
 //
 
 #import <Foundation/Foundation.h>

@@ -2,8 +2,7 @@
 //  MMViewController.m
 //  MBHackathon
 //
-//  Created by Jeff Wilson on 18/06/2014.
-//  Copyright (c) 2014 Marauders. All rights reserved.
+//  Created by James Trousdale, Jeff Wilson and Nick Olmsted on 18/06/2014.
 //
 
 #import "MMViewController.h"
@@ -181,6 +180,8 @@ int softwareValues = 100;
     else {
         [[self statusView] setImage:[UIImage imageNamed:@"4.png"]];
     }
+    int average = (backupPercent + encryptionPercent + softWarePercent)/3;
+    [[self overallHealth] setText:[NSString stringWithFormat:@"%i%%",average]];
 }
 
 - (void)setJSSUsername:(NSString *)jamfUserName andCrashPlanUsername:(NSString *)code42Username andCrashPlanPassword:(NSString *)crashplanPass{
@@ -192,9 +193,9 @@ int softwareValues = 100;
 - (IBAction)reportStolenButtonPressed:(id)sender {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Report Stolen"
                                                     message:@"Click OK to notify IT and wipe all data"
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:@"Cancel", nil];
+                                                   delegate:self
+                                          cancelButtonTitle:@"Cancel"
+                                          otherButtonTitles:@"Ok", nil];
     [alert show];
 }
 
@@ -204,6 +205,23 @@ int softwareValues = 100;
 - (void)textFieldDidEndEditing:(UITextField *)textField
 {
     [self checkAndDisplayComplianceStatus:nil];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+// pragma mark UIAlertViewDelegate methods
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        NSString *emailLink = [NSString stringWithFormat:@"mailto:wilso4jm@outlook.com?subject=LostDevice&body=Help"];
+        NSURL *url = [[NSURL alloc] initWithString:emailLink];
+        [[UIApplication sharedApplication] openURL:url];
+    }
 }
 
 @end

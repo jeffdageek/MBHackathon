@@ -2,9 +2,10 @@
 //  MMUrlErrorViewController.m
 //  MBHackathon
 //
-//  Created by Jeff Wilson on 20/06/2014.
-//  Copyright (c) 2014 Marauders. All rights reserved.
+//  Created by James Trousdale, Jeff Wilson and Nick Olmsted on 18/06/2014.
 //
+//  No custom logic is implemented here.  This is a static xib file, but can be later customized to
+//  allow for reconfiguration of URL parameters and UI changes to show current connection status.
 
 #import "MMUrlErrorViewController.h"
 

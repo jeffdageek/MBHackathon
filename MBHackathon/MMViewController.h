@@ -2,13 +2,21 @@
 //  MMViewController.h
 //  MBHackathon
 //
-//  Created by Jeff Wilson on 18/06/2014.
-//  Copyright (c) 2014 Marauders. All rights reserved.
+//  Created by James Trousdale, Jeff Wilson and Nick Olmsted on 18/06/2014.
 //
+//  This is the main view of the app.  Workflow is initiated on viewDidAppear and is as follows:
+/*
+ 
+ 1. Check for existing username and password (To do: Read/Write to file so not prompted on each launch)
+ 2. If not known, create a view controller to prompt for info and display it to collect.
+ 3. If set, check for internet connection and display error view controller if not connected
+ 4. Check values and change UI based on current status (To Do: Pull this from Web Services instead of static assigned)
+ 
+*/
 
 #import <UIKit/UIKit.h>
 
-@interface MMViewController : UIViewController <UITextFieldDelegate>
+@interface MMViewController : UIViewController <UITextFieldDelegate, UIAlertViewDelegate>
 {
     NSString *jssUser;
     NSString *crashPlanUser;
@@ -24,6 +32,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *backupPercentage;
 @property (weak, nonatomic) IBOutlet UITextField *encryptionPercentage;
 @property (weak, nonatomic) IBOutlet UITextField *softwareUpToDate;
+@property (weak, nonatomic) IBOutlet UILabel *overallHealth;
 
 
 @end
