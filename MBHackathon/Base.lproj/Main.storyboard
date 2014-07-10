@@ -17,32 +17,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Backup %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-U5-OZH">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Backup %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMI-U5-OZH">
                                 <rect key="frame" x="20" y="111" width="80" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Encryption %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-mA-khD">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Encryption %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-mA-khD">
                                 <rect key="frame" x="20" y="149" width="100" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Software up to date %: " minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tj5-t4-6fP">
                                 <rect key="frame" x="20" y="187" width="158" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-bs-FdS">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HBt-bs-FdS">
                                 <rect key="frame" x="190" y="149" width="53" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="Utf-Ac-sGH"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KC9-Db-a18">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KC9-Db-a18">
                                 <rect key="frame" x="190" y="187" width="53" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="OE4-7d-zmu"/>
@@ -66,7 +66,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Nick Olmsted" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a9E-iH-bsB">
                                 <rect key="frame" x="20" y="28" width="280" height="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="zKA-Dj-5Gx">
@@ -77,15 +77,15 @@
                                     <segment title="iPad Air"/>
                                 </segments>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCX-eH-Lkm">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCX-eH-Lkm">
                                 <rect key="frame" x="190" y="109" width="53" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="6eX-0A-kEI"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95Z-Cn-uxW">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="95Z-Cn-uxW">
                                 <rect key="frame" x="242" y="109" width="17" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -93,7 +93,7 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="lyt-ce-5iZ"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-FH-XHg">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LF5-FH-XHg">
                                 <rect key="frame" x="242" y="149" width="17" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -101,35 +101,35 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="diC-Zb-pWF"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-rE-DGk">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vaK-rE-DGk">
                                 <rect key="frame" x="276" y="113" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxu-pb-XDB">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxu-pb-XDB">
                                 <rect key="frame" x="276" y="153" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-YL-BAu">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-YL-BAu">
                                 <rect key="frame" x="276" y="191" width="22" height="22"/>
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IT Health:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-EC-5wC">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="IT Health:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dbV-EC-5wC">
                                 <rect key="frame" x="20" y="485" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLd-7y-WCb">
                                 <rect key="frame" x="110" y="485" width="29" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XB-kV-j4b">
+                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="%" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4XB-kV-j4b">
                                 <rect key="frame" x="242" y="187" width="17" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -144,6 +144,7 @@
                                     <constraint firstAttribute="height" constant="61" id="hwp-Xd-O60"/>
                                     <constraint firstAttribute="width" constant="217" id="j2x-Gu-uBe"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
                                 <state key="normal" title="Report Stolen">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -154,23 +155,43 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gxu-pb-XDB" firstAttribute="leading" secondItem="LF5-FH-XHg" secondAttribute="trailing" constant="17" id="0AK-ii-8Ht"/>
                             <constraint firstItem="4xu-Ft-IbE" firstAttribute="width" secondItem="a9E-iH-bsB" secondAttribute="width" id="24P-T8-BIJ"/>
                             <constraint firstAttribute="trailing" secondItem="om6-Lo-2wp" secondAttribute="trailing" constant="51" id="2T9-Gn-dj7"/>
                             <constraint firstItem="Ao6-mA-khD" firstAttribute="top" secondItem="VMI-U5-OZH" secondAttribute="bottom" constant="8" id="39z-un-r1F"/>
+                            <constraint firstItem="95Z-Cn-uxW" firstAttribute="leading" secondItem="FCX-eH-Lkm" secondAttribute="trailing" constant="-1" id="3AI-uo-3SE"/>
+                            <constraint firstItem="vaK-rE-DGk" firstAttribute="centerY" secondItem="95Z-Cn-uxW" secondAttribute="centerY" id="4Ck-uA-rdM"/>
+                            <constraint firstItem="VMI-U5-OZH" firstAttribute="centerY" secondItem="FCX-eH-Lkm" secondAttribute="centerY" constant="2" id="5aU-nX-Nkb"/>
                             <constraint firstItem="a9E-iH-bsB" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="61d-Kx-Phf"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V4p-5x-j3I" secondAttribute="bottom" constant="20" id="8ax-Vj-fYy"/>
+                            <constraint firstItem="Ao6-mA-khD" firstAttribute="centerY" secondItem="HBt-bs-FdS" secondAttribute="centerY" id="9OL-YC-3h7"/>
+                            <constraint firstItem="tj5-t4-6fP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="G92-3I-Al3"/>
                             <constraint firstItem="tj5-t4-6fP" firstAttribute="top" secondItem="Ao6-mA-khD" secondAttribute="bottom" constant="8" id="H58-g2-1DQ"/>
                             <constraint firstItem="om6-Lo-2wp" firstAttribute="leading" secondItem="tj5-t4-6fP" secondAttribute="trailing" constant="-126" id="Hja-2O-cxn"/>
                             <constraint firstItem="VLd-7y-WCb" firstAttribute="centerY" secondItem="V4p-5x-j3I" secondAttribute="centerY" constant="-0.5" id="Ico-Ld-KEw"/>
+                            <constraint firstItem="4XB-kV-j4b" firstAttribute="leading" secondItem="KC9-Db-a18" secondAttribute="trailing" constant="-1" id="Jtl-rM-VBn"/>
                             <constraint firstItem="dbV-EC-5wC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="NpG-8g-aUG"/>
+                            <constraint firstItem="tj5-t4-6fP" firstAttribute="centerY" secondItem="KC9-Db-a18" secondAttribute="centerY" id="QUF-W0-d7b"/>
+                            <constraint firstItem="LF5-FH-XHg" firstAttribute="centerY" secondItem="HBt-bs-FdS" secondAttribute="centerY" id="RjN-6n-BRg"/>
+                            <constraint firstItem="LF5-FH-XHg" firstAttribute="centerY" secondItem="gxu-pb-XDB" secondAttribute="centerY" id="S9b-Av-ajp"/>
+                            <constraint firstItem="vaK-rE-DGk" firstAttribute="leading" secondItem="95Z-Cn-uxW" secondAttribute="trailing" constant="17" id="Sdp-J9-7tr"/>
+                            <constraint firstItem="tj5-t4-6fP" firstAttribute="top" secondItem="Ao6-mA-khD" secondAttribute="bottom" constant="8" id="TaM-Te-eST"/>
+                            <constraint firstItem="4XB-kV-j4b" firstAttribute="centerY" secondItem="qTS-YL-BAu" secondAttribute="centerY" id="Tw5-4b-viu"/>
                             <constraint firstItem="zKA-Dj-5Gx" firstAttribute="top" secondItem="a9E-iH-bsB" secondAttribute="bottom" constant="15" id="W40-xP-BAy"/>
+                            <constraint firstItem="Ao6-mA-khD" firstAttribute="top" secondItem="VMI-U5-OZH" secondAttribute="bottom" constant="8" id="WEj-MA-pws"/>
                             <constraint firstAttribute="trailing" secondItem="V4p-5x-j3I" secondAttribute="trailing" constant="20" id="WbS-dF-41s"/>
+                            <constraint firstItem="Ao6-mA-khD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="aF6-VD-Z56"/>
+                            <constraint firstItem="VMI-U5-OZH" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="dQd-NG-hxu"/>
                             <constraint firstItem="VLd-7y-WCb" firstAttribute="width" secondItem="dbV-EC-5wC" secondAttribute="width" id="du9-DY-SFT"/>
                             <constraint firstItem="V4p-5x-j3I" firstAttribute="centerY" secondItem="dbV-EC-5wC" secondAttribute="centerY" constant="0.5" id="fPf-do-Sym"/>
                             <constraint firstItem="4xu-Ft-IbE" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="iIv-bu-iSa"/>
                             <constraint firstItem="4xu-Ft-IbE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="ntH-tu-m4q"/>
+                            <constraint firstItem="LF5-FH-XHg" firstAttribute="leading" secondItem="HBt-bs-FdS" secondAttribute="trailing" constant="-1" id="uQD-vB-gxk"/>
+                            <constraint firstItem="4XB-kV-j4b" firstAttribute="centerY" secondItem="KC9-Db-a18" secondAttribute="centerY" id="uxb-0a-ecH"/>
                             <constraint firstItem="om6-Lo-2wp" firstAttribute="top" secondItem="tj5-t4-6fP" secondAttribute="bottom" constant="60" id="wFG-3P-LHL"/>
+                            <constraint firstItem="95Z-Cn-uxW" firstAttribute="centerY" secondItem="FCX-eH-Lkm" secondAttribute="centerY" id="yX9-9I-4KZ"/>
                             <constraint firstItem="VMI-U5-OZH" firstAttribute="top" secondItem="zKA-Dj-5Gx" secondAttribute="bottom" constant="10" id="yjv-MM-DO5"/>
+                            <constraint firstItem="qTS-YL-BAu" firstAttribute="leading" secondItem="4XB-kV-j4b" secondAttribute="trailing" constant="17" id="z8F-2P-e0X"/>
                         </constraints>
                     </view>
                     <connections>
