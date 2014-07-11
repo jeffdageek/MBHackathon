@@ -12,6 +12,13 @@
 
 @implementation MMWebServiceParser
 
+/*
+ 
+ This class is meant to be a singleton and would get information from webservices and pass them back to
+ the calling class.
+ 
+*/
+
 +(NSString *)getValueFromElement:(NSString *)element withWebServiceURL:(NSString *)url withUsername:(NSString *)username
 {
     return @"DATA!";

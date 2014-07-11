@@ -46,21 +46,21 @@
 		93244A6C1954A2A800969F43 /* MMUrlErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUrlErrorViewController.h; sourceTree = "<group>"; };
 		93244A6D1954A2A900969F43 /* MMUrlErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMUrlErrorViewController.m; sourceTree = "<group>"; };
 		93244A6E1954A2A900969F43 /* MMUrlErrorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MMUrlErrorViewController.xib; sourceTree = "<group>"; };
-		934984E31951D7F800D6031A /* MBHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MBHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		934984E31951D7F800D6031A /* IT Help.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IT Help.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		934984E61951D7F800D6031A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		934984E81951D7F800D6031A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		934984EA1951D7F800D6031A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		934984EE1951D7F800D6031A /* MBHackathon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBHackathon-Info.plist"; sourceTree = "<group>"; };
+		934984EE1951D7F800D6031A /* IT Help-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IT Help-Info.plist"; sourceTree = "<group>"; };
 		934984F01951D7F800D6031A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		934984F21951D7F800D6031A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		934984F41951D7F800D6031A /* MBHackathon-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MBHackathon-Prefix.pch"; sourceTree = "<group>"; };
+		934984F41951D7F800D6031A /* IT Help-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IT Help-Prefix.pch"; sourceTree = "<group>"; };
 		934984F51951D7F800D6031A /* MMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMAppDelegate.h; sourceTree = "<group>"; };
 		934984F61951D7F800D6031A /* MMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMAppDelegate.m; sourceTree = "<group>"; };
 		934984F91951D7F800D6031A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		934984FB1951D7F800D6031A /* MMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMViewController.h; sourceTree = "<group>"; };
 		934984FC1951D7F800D6031A /* MMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMViewController.m; sourceTree = "<group>"; };
-		934985041951D7F800D6031A /* MBHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9349850D1951D7F800D6031A /* MBHackathonTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MBHackathonTests-Info.plist"; sourceTree = "<group>"; };
+		934985041951D7F800D6031A /* IT HelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IT HelpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9349850D1951D7F800D6031A /* IT HelpTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IT HelpTests-Info.plist"; sourceTree = "<group>"; };
 		9349850F1951D7F800D6031A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		934985111951D7F800D6031A /* MBHackathonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MBHackathonTests.m; sourceTree = "<group>"; };
 		936FA2D3195A70C700400164 /* MMUsernamePromptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMUsernamePromptViewController.h; sourceTree = "<group>"; };
@@ -106,8 +106,8 @@
 		934984E41951D7F800D6031A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				934984E31951D7F800D6031A /* MBHackathon.app */,
-				934985041951D7F800D6031A /* MBHackathonTests.xctest */,
+				934984E31951D7F800D6031A /* IT Help.app */,
+				934985041951D7F800D6031A /* IT HelpTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,10 +149,10 @@
 			children = (
 				93005B1D195388BE008971D4 /* icon.png */,
 				93005B1E195388BE008971D4 /* icon2x.png */,
-				934984EE1951D7F800D6031A /* MBHackathon-Info.plist */,
+				934984EE1951D7F800D6031A /* IT Help-Info.plist */,
 				934984EF1951D7F800D6031A /* InfoPlist.strings */,
 				934984F21951D7F800D6031A /* main.m */,
-				934984F41951D7F800D6031A /* MBHackathon-Prefix.pch */,
+				934984F41951D7F800D6031A /* IT Help-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 		9349850C1951D7F800D6031A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9349850D1951D7F800D6031A /* MBHackathonTests-Info.plist */,
+				9349850D1951D7F800D6031A /* IT HelpTests-Info.plist */,
 				9349850E1951D7F800D6031A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -178,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		934984E21951D7F800D6031A /* MBHackathon */ = {
+		934984E21951D7F800D6031A /* IT Help */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 934985151951D7F800D6031A /* Build configuration list for PBXNativeTarget "MBHackathon" */;
+			buildConfigurationList = 934985151951D7F800D6031A /* Build configuration list for PBXNativeTarget "IT Help" */;
 			buildPhases = (
 				934984DF1951D7F800D6031A /* Sources */,
 				934984E01951D7F800D6031A /* Frameworks */,
@@ -190,14 +190,14 @@
 			);
 			dependencies = (
 			);
-			name = MBHackathon;
+			name = "IT Help";
 			productName = MBHackathon;
-			productReference = 934984E31951D7F800D6031A /* MBHackathon.app */;
+			productReference = 934984E31951D7F800D6031A /* IT Help.app */;
 			productType = "com.apple.product-type.application";
 		};
-		934985031951D7F800D6031A /* MBHackathonTests */ = {
+		934985031951D7F800D6031A /* IT HelpTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 934985181951D7F800D6031A /* Build configuration list for PBXNativeTarget "MBHackathonTests" */;
+			buildConfigurationList = 934985181951D7F800D6031A /* Build configuration list for PBXNativeTarget "IT HelpTests" */;
 			buildPhases = (
 				934985001951D7F800D6031A /* Sources */,
 				934985011951D7F800D6031A /* Frameworks */,
@@ -208,9 +208,9 @@
 			dependencies = (
 				9349850A1951D7F800D6031A /* PBXTargetDependency */,
 			);
-			name = MBHackathonTests;
+			name = "IT HelpTests";
 			productName = MBHackathonTests;
-			productReference = 934985041951D7F800D6031A /* MBHackathonTests.xctest */;
+			productReference = 934985041951D7F800D6031A /* IT HelpTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -228,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 934984DE1951D7F700D6031A /* Build configuration list for PBXProject "MBHackathon" */;
+			buildConfigurationList = 934984DE1951D7F700D6031A /* Build configuration list for PBXProject "IT Help" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -241,8 +241,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				934984E21951D7F800D6031A /* MBHackathon */,
-				934985031951D7F800D6031A /* MBHackathonTests */,
+				934984E21951D7F800D6031A /* IT Help */,
+				934985031951D7F800D6031A /* IT HelpTests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,7 +299,7 @@
 /* Begin PBXTargetDependency section */
 		9349850A1951D7F800D6031A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 934984E21951D7F800D6031A /* MBHackathon */;
+			target = 934984E21951D7F800D6031A /* IT Help */;
 			targetProxy = 934985091951D7F800D6031A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -408,9 +408,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBHackathon/MBHackathon-Prefix.pch";
-				INFOPLIST_FILE = "MBHackathon/MBHackathon-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MBHackathon/IT Help-Prefix.pch";
+				INFOPLIST_FILE = "MBHackathon/IT Help-Info.plist";
+				PRODUCT_NAME = "IT Help";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -421,9 +421,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MBHackathon/MBHackathon-Prefix.pch";
-				INFOPLIST_FILE = "MBHackathon/MBHackathon-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MBHackathon/IT Help-Prefix.pch";
+				INFOPLIST_FILE = "MBHackathon/IT Help-Info.plist";
+				PRODUCT_NAME = "IT Help";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -443,8 +443,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MBHackathonTests/MBHackathonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MBHackathonTests/IT HelpTests-Info.plist";
+				PRODUCT_NAME = "IT HelpTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -461,8 +461,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MBHackathon/MBHackathon-Prefix.pch";
-				INFOPLIST_FILE = "MBHackathonTests/MBHackathonTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "MBHackathonTests/IT HelpTests-Info.plist";
+				PRODUCT_NAME = "IT HelpTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -471,7 +471,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		934984DE1951D7F700D6031A /* Build configuration list for PBXProject "MBHackathon" */ = {
+		934984DE1951D7F700D6031A /* Build configuration list for PBXProject "IT Help" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				934985131951D7F800D6031A /* Debug */,
@@ -480,7 +480,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		934985151951D7F800D6031A /* Build configuration list for PBXNativeTarget "MBHackathon" */ = {
+		934985151951D7F800D6031A /* Build configuration list for PBXNativeTarget "IT Help" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				934985161951D7F800D6031A /* Debug */,
@@ -489,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		934985181951D7F800D6031A /* Build configuration list for PBXNativeTarget "MBHackathonTests" */ = {
+		934985181951D7F800D6031A /* Build configuration list for PBXNativeTarget "IT HelpTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				934985191951D7F800D6031A /* Debug */,

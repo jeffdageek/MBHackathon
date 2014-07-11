@@ -35,6 +35,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+/*
+ 
+ Called by the dismiss button on the UI.  Collects username and passwords, and sends to presenting viewcontroller
+ 
+ 
+*/
+
 - (IBAction)sendUsername:(id)sender {
     NSString *jssUsername = [[self jamfUsernameBox] text];
     NSString *crashPlanUsername = [[self crashPlanUsernameBox] text];

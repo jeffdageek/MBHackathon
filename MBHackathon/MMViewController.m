@@ -9,17 +9,17 @@
 #import "MMUrlErrorViewController.h"
 #import "MMUsernamePromptViewController.h"
 
-// To prevent constant loading of the loading page, define
-// a variable to determine if it's been presented already.
+/*
+ 
+ Many of these variables would ideally be set my the MDM server deploying the app and prompting the 
+ user if not present.  Time ran out before this was implemented, so they're statically set here.
+ Also, once obtained, the variables should be stored within the app, so subsequent launches do not require
+ information to be re-provided.  Also, in event of connection error, the information should be cleared and
+ cause a re-prompt.
+ 
+*/
 
-// TODO: Fill in with all information and/or move to seperate
-// Declarations file.
-
-// Note:  Change this to the actual info for your own JSS and CrashPlan server.
-// This is the infor we'll be using to connect to the web service.
-// If you're having issues with the webservice, ensure this is all correct.
-
-NSString *jssURL = @"http://apple.com";
+NSString *jssURL = @"http://jamfsoftware.com";
 NSString *crashplanURL = @"https://crashplan.com";
 NSString *jssUserName = @"username";
 NSString *jssPassword = @"password";
@@ -27,11 +27,12 @@ NSString *jssPass = @"abc123";
 NSString *crashPlanPass = @"abc123";
 
 
-// Note:  Do not change these...  These are used for the underlying code of the app
+// Note:  Do not change these...  These are used to prevent errors when reading/writing to variables dictionary
 NSString *jSSEndUsernameKey = @"JSSEndUsername";
 NSString *crashPlanEndUserNameKey = @"CrashPlanEndUserName";
 NSString *allJSSComptuersKey = @"allJSSComputers";
 NSString *allCrashPlanComptuersKey = @"allCrashPlanComputers";
+
 
 // Debugging variables:
 int backupValue = 100;
@@ -51,6 +52,19 @@ int softwareValues = 100;
 {
     [super viewDidLoad];
 }
+
+/*
+ 
+ All logic kicks off from this point.
+ 
+ Logic goes as follows:
+ 1. If we don't yet have a username, prsent a viewcontroller to get the information.
+ 2. If we have it (or if this view re-appears due to dismissing of previous viewcontroller), load websites into Array
+ 3. Attempt to connect to the sites, present error viewcontroller if not successful
+ 4. Load variables into a dictionary (this would call webservces to get actual data if that portion was completed)
+ 5. Update UI
+ 
+*/
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -80,7 +94,7 @@ int softwareValues = 100;
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Helper Functions
+#pragma mark - Helper Methods
 
 - (NSDictionary *)setupVariables
 {
@@ -215,10 +229,17 @@ int softwareValues = 100;
 
 // pragma mark UIAlertViewDelegate methods
 
+/*
+ 
+ This method is untested.  The idea was orginally to display a mail sheet, but started experementing with 
+ sending directly without having to present a mail sheet.
+ 
+*/
+
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
     if (buttonIndex == 1) {
-        NSString *emailLink = [NSString stringWithFormat:@"mailto:wilso4jm@outlook.com?subject=LostDevice&body=Help"];
+        NSString *emailLink = [NSString stringWithFormat:@"mailto:email@pretendco.com?subject=LostDevice&body=Help"];
         NSURL *url = [[NSURL alloc] initWithString:emailLink];
         [[UIApplication sharedApplication] openURL:url];
     }

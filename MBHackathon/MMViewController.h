@@ -12,6 +12,10 @@
  3. If set, check for internet connection and display error view controller if not connected
  4. Check values and change UI based on current status (To Do: Pull this from Web Services instead of static assigned)
  
+ Basic Model-View-Controller-Store practices were attempted.  MMWebServiceParser is intended to be the store that would
+ brocker the model (external web services).  At the time of submission for the Mac Hackathon, the web services portion 
+ were not yet developed.
+ 
 */
 
 #import <UIKit/UIKit.h>
