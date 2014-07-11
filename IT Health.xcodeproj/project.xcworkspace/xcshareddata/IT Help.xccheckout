@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>05FFAF38-4B10-483A-8671-CFA08BBFAF5A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IT Help</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4B264A28-978C-465B-AD80-A68C26EED2AF</key>
+		<string>https://github.com/jeffdageek/MBHackathon.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IT Help.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4B264A28-978C-465B-AD80-A68C26EED2AF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/jeffdageek/MBHackathon.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4B264A28-978C-465B-AD80-A68C26EED2AF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4B264A28-978C-465B-AD80-A68C26EED2AF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>MBHackathon</string>
+		</dict>
+	</array>
+</dict>
+</plist>

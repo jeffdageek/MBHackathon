@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "934984E21951D7F800D6031A"
-               BuildableName = "MBHackathon.app"
-               BlueprintName = "IT Help"
-               ReferencedContainer = "container:IT Help.xcodeproj">
+               BuildableName = "IT Help.app"
+               BlueprintName = "IT Health"
+               ReferencedContainer = "container:IT Health.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "934985031951D7F800D6031A"
-               BuildableName = "MBHackathonTests.xctest"
-               BlueprintName = "IT HelpTests"
-               ReferencedContainer = "container:IT Help.xcodeproj">
+               BuildableName = "IT HelpTests.xctest"
+               BlueprintName = "IT HealthTests"
+               ReferencedContainer = "container:IT Health.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -43,9 +43,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "934984E21951D7F800D6031A"
-            BuildableName = "MBHackathon.app"
-            BlueprintName = "IT Help"
-            ReferencedContainer = "container:IT Help.xcodeproj">
+            BuildableName = "IT Help.app"
+            BlueprintName = "IT Health"
+            ReferencedContainer = "container:IT Health.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "934984E21951D7F800D6031A"
-            BuildableName = "MBHackathon.app"
-            BlueprintName = "IT Help"
-            ReferencedContainer = "container:IT Help.xcodeproj">
+            BuildableName = "IT Help.app"
+            BlueprintName = "IT Health"
+            ReferencedContainer = "container:IT Health.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -80,9 +80,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "934984E21951D7F800D6031A"
-            BuildableName = "MBHackathon.app"
-            BlueprintName = "IT Help"
-            ReferencedContainer = "container:IT Help.xcodeproj">
+            BuildableName = "IT Help.app"
+            BlueprintName = "IT Health"
+            ReferencedContainer = "container:IT Health.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
