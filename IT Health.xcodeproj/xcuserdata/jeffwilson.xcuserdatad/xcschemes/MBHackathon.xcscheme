@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "934984E21951D7F800D6031A"
-               BuildableName = "IT Help.app"
+               BuildableName = "IT Health.app"
                BlueprintName = "IT Health"
                ReferencedContainer = "container:IT Health.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "934985031951D7F800D6031A"
-               BuildableName = "IT HelpTests.xctest"
+               BuildableName = "IT HealthTests.xctest"
                BlueprintName = "IT HealthTests"
                ReferencedContainer = "container:IT Health.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "934984E21951D7F800D6031A"
-            BuildableName = "IT Help.app"
+            BuildableName = "IT Health.app"
             BlueprintName = "IT Health"
             ReferencedContainer = "container:IT Health.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "934984E21951D7F800D6031A"
-            BuildableName = "IT Help.app"
+            BuildableName = "IT Health.app"
             BlueprintName = "IT Health"
             ReferencedContainer = "container:IT Health.xcodeproj">
          </BuildableReference>
@@ -80,7 +80,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "934984E21951D7F800D6031A"
-            BuildableName = "IT Help.app"
+            BuildableName = "IT Health.app"
             BlueprintName = "IT Health"
             ReferencedContainer = "container:IT Health.xcodeproj">
          </BuildableReference>
